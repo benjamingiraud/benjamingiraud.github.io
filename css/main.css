@@ -1,0 +1,231 @@
+/*
+
+DOM elements
+
+*/
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    margin: auto;
+}
+main {
+    margin: 2em auto 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav {
+    opacity: 0;
+    margin: auto;
+    margin-bottom: 2em;
+}
+nav span {
+    transition: 0.1s all ease-in-out;
+    padding: 1em;
+}
+nav span:not(.selected) {
+    cursor: pointer;
+}
+pre {
+    margin: 1em 0;
+}
+code {
+    font-size: 150%;
+    padding: 0 !important;
+}
+/*
+
+Flex classes
+
+*/
+.flex {
+    display: flex;
+}
+.row {
+    flex-direction: row;
+}
+.column {
+    flex-direction: column;
+}
+.spacebetween-center {
+    justify-content: space-between;
+    align-items: center;
+}
+.center-center {
+    justify-content: center;
+    align-items: center;
+}
+.start {
+    justify-content: flex-start;
+}
+.start-center {
+    justify-content: flex-start;
+    align-items: center;
+}
+.center {
+    justify-content: center;
+}
+/*
+
+DOM classes
+
+*/
+.hidden {
+    display: none;
+}
+.typing-container {
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em 0;
+    background-color: #23241F;
+    color: #F8F8F2;
+    box-shadow: 0 0 2px #23241F;
+    font-size: 125%;
+    text-shadow: 0px 0px 5px grey;
+}
+.code-container {
+    margin: auto;
+    margin-top: 1em;
+}
+.text-container {
+    width: 75%;
+    padding: 1em;
+    margin: 2em auto 2em auto;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}
+.pink:hover, .pink.selected {
+    border-bottom: 3px solid #359797;
+    color: #359797;
+}
+.green:hover, .green.selected {
+    border-bottom: 3px solid #6CC72C;
+    color: #6CC72C;
+}
+.orange:hover, .orange.selected {
+    border-bottom: 3px solid #FE9720;
+    color: #FE9720;
+}
+.purple:hover, .purple.selected {
+    border-bottom: 3px solid #9358FE;
+    color: #9358FE;
+}
+.h-thin {
+    margin: 0;
+    margin-top: 1em;
+    font-weight:lighter;
+    color: rgba(0, 0, 0, 0.5);
+}
+/*
+
+DOM ids
+
+*/
+#typing {
+    font-weight: 200;
+}
+#infos {
+    display: none;
+}
+#presentation {
+    background-color: #359797;
+}
+#education {
+    background-color: #FE9720;
+}
+#project {
+    background-color: #6CC72C;
+}
+#languages {
+    background-color: #9358FE;
+}
+
+/*
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #FFF;
+}
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+  color: #black;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #FE9720;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+  color: #a6e22e;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: #359797;
+}
+.hljs-keyword {
+    color: #9358FE;
+}
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #f8f8f2;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: #6CC72C;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
